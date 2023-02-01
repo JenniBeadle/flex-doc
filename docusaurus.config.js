@@ -6,20 +6,20 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "notion pull sample",
+  title: "FLEx training",
   tagline: "",
-  url: "https://sillsdev.github.io",
-  baseUrl: "/docu-notion-sample-site/",
+  url: "https://JenniBeadle.github.io",
+  baseUrl: "/flex-doc/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
 
-  organizationName: "sillsdev", // Usually your GitHub org/user name.
-  projectName: "docu-notion-sample-site", // Usually your repo name.
+  organizationName: "JenniBeadle", // Usually your GitHub org/user name.
+  projectName: "flex-doc", // Usually your repo name.
   deploymentBranch: "gh-pages",
   // Docusaurus recommends "trailingSlash:false", but that gives me an error on build.
   //[ERROR] Error: ENOENT: no such file or directory, open 'C:\dev\docu-notion\build\.html'
-  trailingSlash: true,
+  trailingSlash: false,
 
   presets: [
     [

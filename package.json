@@ -1,6 +1,6 @@
 {
-  "name": "docu-notion-sample-site",
-  "version": "0.0.0",
+  "name": "FLEX-doc",
+  "version": "0.0.1",
   "private": false,
   "scripts": {
     "pull": "cross-var npx docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $DOCU_NOTION_SAMPLE_ROOT_PAGE -m ./docs -i ./static/notion_imgs -p /notion_imgs/",
@@ -11,9 +11,9 @@
     "deploy": "docusaurus deploy"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.2.0",
-    "@docusaurus/preset-classic": "^2.2.0",
-    "@easyops-cn/docusaurus-search-local": "^0.30.1",
+    "@docusaurus/core": "^2.3.0",
+    "@docusaurus/preset-classic": "^2.3.0",
+    "@easyops-cn/docusaurus-search-local": "^0.33.6",
     "@mdx-js/react": "^1",
     "clsx": "^1.2.1",
     "docu-notion": "*",
