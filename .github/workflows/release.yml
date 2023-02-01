@@ -26,7 +26,7 @@ jobs:
         run: yarn
       - name: Pull from Notion
         env:
-          FLEX_NOTION_INTEGRATION_TOKEN: ${{ secrets.FLEX_NOTION_INTEGRATION_TOKEN }}
+          DOCU_NOTION_INTEGRATION_TOKEN: ${{ secrets.DOCU_NOTION_INTEGRATION_TOKEN }}
           FLEX_NOTION_ROOT_PAGE: ${{ secrets.FLEX_NOTION_ROOT_PAGE }}
         run: yarn pull
       - name: Commit
