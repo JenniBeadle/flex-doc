@@ -26,7 +26,7 @@ jobs:
         run: yarn
       - name: Pull from Notion
         env:
-        FLEX_NOTION_INTEGRATION_TOKEN: ${{ secrets.FLEX_NOTION_INTEGRATION_TOKEN }}
+        FLEX_NOTION_INTEGRATION_TOKEN: ${{ secrets.DOCU_NOTION_INTEGRATION_TOKEN }}
           FLEX_NOTION_ROOT_PAGE: ${{ secrets.FLEX_NOTION_ROOT_PAGE }}
         run: yarn pull
       - name: Commit
@@ -38,5 +38,5 @@ jobs:
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.PERSON_ACCESS_TOKEN_FOR_PUSH_TO_GH_PAGES_BRANCH }}
           publish_dir: ./build
