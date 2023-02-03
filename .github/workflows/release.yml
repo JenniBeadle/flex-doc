@@ -27,7 +27,7 @@ jobs:
       - name: Pull from Notion
         env:
           DOCU_NOTION_INTEGRATION_TOKEN: ${{ secrets.DOCU_NOTION_INTEGRATION_TOKEN }}
-          FLEX_NOTION_ROOT_PAGE: ${{ FLEX_NOTION_ROOT_PAGE }}
+          FLEX_NOTION_ROOT_PAGE: ${{ secrets.FLEX_NOTION_ROOT_PAGE }}
         run: yarn pull
       - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v4
